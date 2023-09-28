@@ -4,6 +4,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { siteConfig } from '@/config/site';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -11,9 +12,27 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'mobilecn-ui',
-  description:
-    'Build beautiful Swift and React Native apps with reusable components',
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: ['React Native', 'Swift', 'SwiftUI', 'Tailwind CSS'],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    images: [`${siteConfig.url}/img/og.png`],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [`${siteConfig.url}/img/og.png`],
+  },
 };
 
 export default function RootLayout({
