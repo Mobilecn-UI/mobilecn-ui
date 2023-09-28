@@ -1,7 +1,8 @@
 import Link from 'next/link';
 
-import { Icons } from './icons';
 import { siteConfig } from '@/config/site';
+
+import { Icons } from './icons';
 
 export function Header() {
   return (
