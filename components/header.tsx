@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { Icons } from './icons';
+import { Icons } from "./icons";
 
 export function Header() {
   return (
@@ -16,20 +16,20 @@ export function Header() {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://nativecn.mintlify.app/introduction"
+              href="https://github.com/Mobilecn-UI/nativecn-ui"
               className="py-4 transition-all duration-200 hover:text-gray-200"
             >
-              nativecn docs
-              <span className="sr-only">nativecn docs</span>
+              nativecn repo
+              <span className="sr-only">nativecn repo</span>
             </Link>
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://swiftcn.mintlify.app/introduction"
+              href="https://github.com/Mobilecn-UI/swiftcn-ui"
               className="py-4 transition-all duration-200 hover:text-gray-200"
             >
-              swiftcn docs
-              <span className="sr-only">swiftcn docs</span>
+              swiftcn repo
+              <span className="sr-only">swiftcn repo</span>
             </Link>
           </div>
           <Link
