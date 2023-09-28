@@ -1,6 +1,7 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { Icons } from "./icons";
+import { Icons } from './icons';
+import { siteConfig } from '@/config/site';
 
 export function Header() {
   return (
@@ -16,20 +17,20 @@ export function Header() {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/Mobilecn-UI/nativecn-ui"
+              href={siteConfig.docs.nativecn}
               className="py-4 transition-all duration-200 hover:text-gray-200"
             >
-              nativecn repo
-              <span className="sr-only">nativecn repo</span>
+              nativecn docs
+              <span className="sr-only">nativecn docs</span>
             </Link>
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/Mobilecn-UI/swiftcn-ui"
+              href={siteConfig.docs.nativecn}
               className="py-4 transition-all duration-200 hover:text-gray-200"
             >
-              swiftcn repo
-              <span className="sr-only">swiftcn repo</span>
+              swiftcn docs
+              <span className="sr-only">swiftcn docs</span>
             </Link>
           </div>
           <Link
