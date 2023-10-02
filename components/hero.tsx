@@ -7,11 +7,11 @@ import { Icons } from './icons';
 export function Hero() {
   return (
     <section className="flex flex-col gap-6 xl:gap-10 items-center py-4 md:py-11">
-      <div className="flex flex-col gap-2 md:gap-4">
-        <h1 className="font-bold leading-tight text-5xl md:text-6xl xl:text-8xl md:p-1 text-center tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-80% md:from-40% from-white to-black">
+      <div className="flex flex-col gap-4 md:gap-6">
+        <h1 className="font-bold leading-tighter text-5xl md:text-6xl xl:text-8xl md:p-1 text-center tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-70% md:from-50% from-white to-black">
           Beautiful mobile UI components
         </h1>
-        <h2 className="flex flex-col px-5 sm:px-12 text-gray-400 text-base md:text-center sm:text-xl">
+        <h2 className="flex flex-col md:gap-1 px-5 sm:px-12 text-gray-400 text-base text-center sm:text-xl">
           <span>
             Save time, reduce complexity, and create stunning apps effortlessly.
           </span>

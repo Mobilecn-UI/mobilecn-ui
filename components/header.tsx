@@ -9,7 +9,7 @@ export function Header() {
     <header className="bg-black border-b border-gray-900 py-3 px-8 sticky top-0 z-50">
       <nav className="flex items-center justify-between max-w-screen-xl mx-auto">
         <Link href="/">
-          <h1 className="font-bold text-3xl text-white tracking-tight">
+          <h1 className="font-bold text-2xl md:text-3xl text-white tracking-tight">
             mobilecn-ui
           </h1>
         </Link>
@@ -38,7 +38,7 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/Mobilecn-UI"
-            className="bg-white p-3 rounded-md text-black transition-all duration-200 hover:shadow-lg hover:backdrop-blur-md hover:bg-gray-300"
+            className="bg-white p-2 md:p-3 rounded-full md:rounded-md text-black transition-all duration-200 hover:shadow-lg hover:backdrop-blur-md hover:bg-gray-300"
           >
             <Icons.gitHub className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
