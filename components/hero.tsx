@@ -1,3 +1,4 @@
+import { track } from '@vercel/analytics';
 import Link from 'next/link';
 
 import { siteConfig } from '@/config/site';
@@ -25,6 +26,7 @@ export function Hero() {
             rel="noopener noreferrer"
             href={siteConfig.github.nativecn}
             className="bg-white flex gap-2 items-center justify-center h-16 w-56 rounded-2xl shadow-2xl transition-all hover:bg-gray-300"
+            onClick={() => track('click', { button: 'react-native' })}
           >
             <Icons.react className="w-8 h-8" />
             <span className="text-lg xl:text-xl font-medium tracking-tight text-center">
@@ -36,6 +38,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="bg-white flex gap-2 items-center justify-center h-16 w-56 rounded-2xl shadow-2xl transition-all hover:bg-gray-300"
             href={siteConfig.github.swiftcn}
+            onClick={() => track('click', { button: 'swift' })}
           >
             <Icons.swift className="w-10 h-10" />
             <span className="text-lg xl:text-xl font-medium tracking-tight text-center">
