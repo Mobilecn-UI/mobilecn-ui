@@ -27,7 +27,7 @@ export function Header() {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href={siteConfig.docs.nativecn}
+              href={siteConfig.docs.swiftcn}
               className="py-4 transition-all duration-200 hover:text-gray-200"
             >
               swiftcn docs
