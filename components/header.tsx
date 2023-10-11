@@ -1,3 +1,4 @@
+import { track } from '@vercel/analytics';
 import Link from 'next/link';
 
 import { siteConfig } from '@/config/site';
@@ -20,6 +21,7 @@ export function Header() {
               rel="noopener noreferrer"
               href={siteConfig.docs.nativecn}
               className="py-4 transition-all duration-200 hover:text-gray-200"
+              onClick={() => track('click', { button: 'nativecn docs' })}
             >
               nativecn docs
               <span className="sr-only">nativecn docs</span>
@@ -29,6 +31,7 @@ export function Header() {
               rel="noopener noreferrer"
               href={siteConfig.docs.swiftcn}
               className="py-4 transition-all duration-200 hover:text-gray-200"
+              onClick={() => track('click', { button: 'swiftcn docs' })}
             >
               swiftcn docs
               <span className="sr-only">swiftcn docs</span>
@@ -39,6 +42,7 @@ export function Header() {
             rel="noopener noreferrer"
             href="https://github.com/Mobilecn-UI"
             className="bg-white p-2 md:p-3 rounded-full md:rounded-md text-black transition-all duration-200 hover:shadow-lg hover:backdrop-blur-md hover:bg-gray-300"
+            onClick={() => track('click', { button: 'github' })}
           >
             <Icons.gitHub className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
