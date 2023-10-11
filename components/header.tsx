@@ -1,3 +1,5 @@
+'use client';
+
 import { track } from '@vercel/analytics';
 import Link from 'next/link';
 
@@ -16,37 +18,37 @@ export function Header() {
         </Link>
         <div className="flex items-center gap-6">
           <div className="hidden sm:flex gap-5 text-gray-400">
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={siteConfig.docs.nativecn}
+            <button
               className="py-4 transition-all duration-200 hover:text-gray-200"
-              onClick={() => track('click', { button: 'nativecn docs' })}
+              onClick={() => {
+                track('click', { button: 'nativecn docs' });
+                window.open(siteConfig.docs.nativecn);
+              }}
             >
               nativecn docs
               <span className="sr-only">nativecn docs</span>
-            </Link>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={siteConfig.docs.swiftcn}
+            </button>
+            <button
               className="py-4 transition-all duration-200 hover:text-gray-200"
-              onClick={() => track('click', { button: 'swiftcn docs' })}
+              onClick={() => {
+                track('click', { button: 'swiftcn docs' });
+                window.open(siteConfig.docs.swiftcn);
+              }}
             >
               swiftcn docs
               <span className="sr-only">swiftcn docs</span>
-            </Link>
+            </button>
           </div>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Mobilecn-UI"
+          <button
             className="bg-white p-2 md:p-3 rounded-full md:rounded-md text-black transition-all duration-200 hover:shadow-lg hover:backdrop-blur-md hover:bg-gray-300"
-            onClick={() => track('click', { button: 'github' })}
+            onClick={() => {
+              track('click', { button: 'github' });
+              window.open('https://github.com/Mobilecn-UI');
+            }}
           >
             <Icons.gitHub className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
-          </Link>
+          </button>
         </div>
       </nav>
     </header>
