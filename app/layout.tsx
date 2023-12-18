@@ -16,7 +16,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name} - Beautiful UI components`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,

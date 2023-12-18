@@ -10,14 +10,14 @@ export default function Home() {
         <Image
           src="/img/example-dark.png"
           alt="Example dark"
-          className="rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300 ease-in-out rotate-3"
+          className="rounded-2xl shadow-lg transform hover:scale-110 transition-transform duration-300 ease-in-out rotate-3"
           width={400}
           height={700}
         />
         <Image
           src="/img/example-light.png"
           alt="Example light"
-          className="border-4 border-gray-900 rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300 ease-in-out -rotate-6"
+          className="border-4 border-gray-900 rounded-2xl shadow-lg transform hover:scale-110 transition-transform duration-300 ease-in-out -rotate-6"
           width={400}
           height={700}
         />
